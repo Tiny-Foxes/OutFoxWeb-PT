@@ -1,1 +1,52 @@
-<!--TODO: Everything-->
+<p>No StepMania 5.3 Alpha 4.5 e as versões mais novas, mudamos o método de entrada para Xinput.</p>
+
+<p>Por causa dessas mudanças, nem todos os controles (como gamepads, tapetes de dança, e controles de outros jogos de ritmo específicos) são garantidos de funcionar com o StepMania 5.3 sem nenhuma configuração adicional (mesmo se eles fossem suportados nas versões anteriores), a não ser que um pérfil de mapeamento já tenha cido feito para esse controle em específico</p>
+
+<p>Gostariamos de agradecer Josen Tiamat por escrever essas novas instruções de como configurar seu controle para usar no 5.3</p>
+
+<h2>Etapa 1: Coisas para verificar primeiro</h2>
+
+<p>Você começa iniciando seu jogo, indo para "Opções" > "Entrada e calibração" > "Configurar Teclas/Controles" e defina as botões para o seu controle, pule esse guia pois você está feito com tudo que precisa fazer.</p>
+
+<h3>Você não consegue configurar seus controles? OH NÃO!</h3>
+
+<p>Volte uma tela e vá para "Testar Entrada" veja se tem algum botão já mapeado e se sim, quais. Aperte alguns botões no controle e vai aparecer algo na tela como "Key B 12 - Não Mapeada" e se você apertar e nada aparecer, significa que não está mapeado, vamos tentar resolver isso.</p>
+
+<h2>Step 2: O modo fácil</h2>
+
+<p>5.3 tem uma ferramenta já no jogo que automaticamente cuida da maior parte disso para você</p>
+
+<p><img src="https://projectmoon.dance/storage/app/media/controller-guide/guide_1.png" class="img-fluid mx-auto d-block fr-fic fr-dii"></p>
+
+<p>Aperte "Enter" no teclado e aperte o botão apropriado no controle para mapear os botões para os botões que você quer.</p>
+
+<p><img src="https://projectmoon.dance/storage/app/media/controller-guide/guide_2.png" class="img-fluid mx-auto d-block fr-fic fr-dii"></p>
+
+<p>Recomendamos usar essa tela a maioria dos controles no pc, pois facilita o trabalho. Depois de mapear os botões, repita a Etapa 1, se aparecerem como se não tivessem mapeadas, vá para a tela de de teclas/controles para definir o que o botão deve fazer, você não precisa fazer mais nada!</p>
+
+<p>Se ainda não funciona...</p>
+
+<h2>Etapa 3: O modo não tão intuitivo (SDL2 Gamepad Tool)</h2>
+
+<p>Existe uma ferramenta chamada <a href="http://www.generalarcade.com/gamepadtool/">SDL2 Gamepad Tool</a>. Você conecta o controle (via USB, Bluetooth ou qualquer outra forma que você usa para conectar com o PC), e o controle vai aparecer no menu de controles.</p>
+
+<p><img src="https://projectmoon.dance/storage/app/media/controller-guide/guide_3.png" class="img-fluid mx-auto d-block fr-fic fr-dii"></p>
+
+<ol>
+  <li>Clique em "Create a New Mapping"</li>
+  <li>Aperte os botões que você quer mapear assim como você fez na Etapa 2</li>
+  <li>Pule o resto.</li>
+  <li>Salve a lista de caracteres gerada.</li>
+  <li>Copie a lista de caracteres gerada.</li>
+  <li>Vá para a pasta do StepMania, e cole a lista em Data/gamecontrollerdb.txt</li>
+</ol>
+
+<h3>Uma nota</h3>
+
+<p><img src="https://projectmoon.dance/storage/app/media/controller-guide/guide_4.png" class="img-fluid mx-auto d-block fr-fic fr-dii"></p>
+
+<p>O "#" é bom para quando você quer ter Mapeamentos diferentes para o mesmo controle, ele básicamente esconde o mapeamento do jogo. Nesse exemplo é mostrado 3 mapeamentos diferentes e o programa só vai conseguir ver um, o único que vai ser visto pelo sistema é aquele não está escondido com uma "#"</p>
+
+<p>Básicamente, não faça vários mapeamentos do mesmo controle (mesmo se você mudar o nome); o programa só vai conseguir reconhecer um por vez e honextamente, isso é tudo que você precisa. Você deve conseguir configurar os botões igual na Etapa 1.</p>
+
+<p>Tente configurar as direções do analog e tente configurar igual na Etapa 1 de novo.</p>
