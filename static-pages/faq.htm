@@ -1,12 +1,12 @@
 <h1>General</h1>
 
-<h2>What is StepMania 5.3?</h2>
+<h2>What is Project OutFox?</h2>
 
-<p>It is the next version of StepMania in development. We are aiming to modernize the existing StepMania 5.0.x/5.1 codebase to improve its performance and provide enhanced support for modern hardware and operating systems. We are also adding new features, including those being requested by our community, as well as refurbishing its support of non-dance/4-key game types, adding new game types, and so forth.</p>
+<p>A project to modernize the 5.0.x/5.1 codebase to improve its performance and provide enhanced support for modern hardware and operating systems. We are also adding new features, including those being requested by our community, as well as refurbishing its support of non-dance/4-key game types, adding new game types, and so forth.</p>
 
 <h2>What is Project Moondance?</h2>
 
-<p>It is a community/umbrella for Team Rizu (the 5.3 dev team), covering 5.3 as well as other related projects.</p>
+<p>It is a community/umbrella for Team Rizu (the 5.3 dev team), covering 5.3/Project OutFox as well as other related projects.</p>
 
 <h2>Will it still work with my old songs/themes/etc.?</h2>
 
@@ -16,15 +16,15 @@
 
 <p>Please note that we are deprecating the use of semicolon-separated <code>cmd()</code> blocks (i.e. &nbsp;<code>OnCommand=cmd(linear,1.5;diffusealpha,1);&nbsp;</code>) as a means of placing commands on actors in Lua scripts, as this method is a non-standard Lua function that was created for StepMania, and 5.3 is not optimized with this coding style in mind (themes may experience performance penalties if they use this method). It is strongly recommended that function chaining (i.e. code such as <code>OnCommand=function(self) self:linear(1.5):diffusealpha(1) end,&nbsp;</code>) be used instead.</p>
 
-<h2>Can I install it alongside existing versions of StepMania?</h2>
+<h2>Can I install it alongside existing versions?</h2>
 
 <p>Yes. Our installer on Windows also defaults to portable mode, so user profile data is stored in your installation directory.</p>
 
-<p>If you would like to have a shared song library between multiple StepMania builds, you can use the <code>AdditionalSongFolders</code> preference in <code>Save/Preferences.ini</code> to specify a path.</p>
+<p>If you would like to have a shared song library between multiple builds, you can use the <code>AdditionalSongFolders</code> preference in <code>Save/Preferences.ini</code> to specify a path.</p>
 
 <h2>Will there be online support?</h2>
 
-<p>The existing "StepMania Online" (SMO) functionality is deprecated, but we have future plans to develop a revamped online system.</p>
+<p>The existing SMO functionality is deprecated, but we have future plans to develop a revamped online system.</p>
 
 <h2>Where is the source code?/Why are you not open source?</h2>
 
@@ -44,7 +44,7 @@
 
 <h2>What is 5.2 and why did you skip over it?</h2>
 
-<p>5.2 was originally intended to be the next version of StepMania. However, it included a number of major changes that broke compatibility with previous versions of StepMania, and were not well-received by the community and other developers.</p>
+<p>5.2 was originally intended to be the next version. However, it included a number of major changes that broke compatibility with previous versions, and were not well-received by the community and other developers.</p>
 
 <p>5.2 was originally meant to be 5.1. However, in response to the reception, it was officially delayed in favour of a new 5.1 that was still compatible with 5.0.12. This was done under the presumption that the new version (subsequently renamed 5.2) would eventually be completed. However, this did not end up happening.</p>
 
@@ -52,7 +52,7 @@
 
 <h2>My controller doesn't work, but it did on older versions.</h2>
 
-<p>StepMania 5.3 Alpha 4.5 switched to using an XInput-compliant input system by default; additional configuration is needed to use unrecognized controllers in this mode. See <a href="/help/controllers">here</a> for more information on how to map your controller for use in XInput mode on StepMania 5.3.</p>
+<p>Alpha 4.5 switched to using an XInput-compliant input system by default; additional configuration is needed to use unrecognized controllers in this mode. See <a href="/help/controllers">here</a> for more information on how to map your controller for use in XInput mode on Project OutFox.</p>
 
 <p><a href="https://projectmoon.dance/news/stepmania-53-alpha-48-released">As of Alpha 4.8.1</a>, we have reintroduced the legacy input system from past versions as an option in the Experimental Settings menu, if you are having difficulty getting a controller to work in XInput mode or if it performed better under the legacy input handler.</p>
 
