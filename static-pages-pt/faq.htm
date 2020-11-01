@@ -42,6 +42,13 @@
 	<footer class="blockquote-footer">Squirrel</footer>
 </blockquote>
 
+<h2>De quais maneiras eu posso ajudar?</h2>
+
+<ul>
+	<li>Você pode reportar bugs e fazer sugestões no nosso servidor no Discord.</li>
+	<li><a href="https://github.com/Tiny-Foxes">TinyFoxes</a> é um branch do Projecto MoonDance que armazena projetos feitos pela comunidade para o StepMania OutFox 5.3, assim como traduções e outras adições.</li>
+</ul>
+
 <h2>O que é StepMania 5.2 e por que vocês pularam essa versão?</h2>
 
 <p>5.2 originalmente estava em desenvolvimento para ser a próxima versão do StepMania. Porém, essa versão tinha um número grande de mudanças que quebrava suporte com contéudo de versões anteriores, e a comunidade/outros devs não gostaram disso.</p>
@@ -56,10 +63,36 @@
 
 <p><a href="https://projectmoon.dance/news/stepmania-53-alpha-48-released">A partir do lançamento da Alpha 4.8.1</a>, nós oferecemos a opção de usar o método de entrada legado nas opções experimentais no menu de opções, se você estiver tendo problemas pra fazer um controle funcionar com XInput.</p>
 
+<h2>Simply Love não me deixa usar a versão 5.3</h2>
+
+<p>Simply Love 5.3 funciona na versão 5.3, porém a versão 4.8 do Simply Love bloqueia o StepMania 5.3 intencionalmente. Na versão 4.8 do tema, você pode apertar Escape 2 vezes para conseguir usar, mas qualquer versão acima dessa é bloqueada.</p>
+
+<p>Essa proteção pode ser removida abrindo o seguinte arquivo: StepMania OutFox 5.3/Apperance/Themes/Simply Love/Scripts/SL-SupportHelpers.lua, mude a seguinte linha</p>
+
+<p><code>if not (t[2] and (t[2]==0 or t[2]==1)) then return false end</code></p>
+
+<p>para</p>
+
+<p><code>if not (t[2] and (t[2]==0 or t[2]==1 or t[2]==3)) then return false end</code></p>
+
+<p>Ou você pode usar <a href="https://github.com/Tiny-Foxes/Simply-Love-OutFox"></a>esse fork não oficial<a></a> que foi criado pela organização TinyFoxes, que contem funcionalidades e compatibilidade com o StepMania OutFox 5.3</p>
+
 <h2>Eu tenho um processador rápido e/ou recente e meu jogo está tendo vários problemas, por que isso?</h2>
 
 <p>Algumas partes do jogo são tão bem otimizadas que agora elas estão indo <em>rápidas demais</em> e as outras partes do jogo tem que tentar alcançar. Nós vamos resolver esse problema com o passar do tempo, nós recomendamos abrir algum programa em segundo plano pode resolver o problema temporariamente.</p>
 
-<h2>Simply Love não está deixando utilizar o tema no StepMania 5.3</h2>
+<h1>macOS</h1>
 
-<p>Simply Love 4.8 funciona no StepMania 5.3, mas você tem que apertar Backspace duas vezes para passar do aviso de compatibilidade. Simply Love 4.9 não permite que usúarios passem desse aviso de compatibilidade. Essas mudanças foram feitas por um mal-entendido sobre quem Team Rizu é, nós já estamos tentando contatar o autor do tema para providenciar integrações com as novas funções do Stepmania 5.3.</p>
+<h2>Eu estou tendo problemas para rodar o jogo.</h2>
+
+<p>Se você receber um erro assim como "No noteskins found" ou outro problema similiar, você vai ter que mudar as configurações de segurança do macOS para poder rodar o jogo. O sistema não confia em aplicativos não licenciados e prevente acesso a arquivos externos a não ser que seja dado permissão manual pelo usuário.</p>
+
+<p>Para resolver isso, abra o Terminal, e execute o seguinte comando: <code>xattr -dr com.apple.quarantine /caminho/do/jogo</code></p>
+
+<p>Alternativamente, você pode excluir o caminho, e mover o arquivo que contém o jogo para a janela do Terminal.</p>
+
+<p>Em outras versões, macOS Catalina também gera uma mensagem dizendo que o jogo está pedindo permissão para detectar suas teclas.</p>
+
+<h2>O jogo está renderizando em uma janela pequena no canto da tela.</h2>
+
+<p>Isso é porque o renderizador não suporta telas que escalam. Para resolver isso, clique com botão direito no executavel e selecione "Pegar Informação" (Ou destaque o arquivo e aperte Comando (⌘)+I, e ative "Abrir em Resolução Baixa" em General.</p>
