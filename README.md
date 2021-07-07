@@ -1,6 +1,6 @@
 # MoondanceWeb-PT
 
-Portuguese translation of Project Moondance website.
+Portuguese translation of OutFox website.
 
 ## Como funciona
 
