@@ -1,4 +1,14 @@
-# OutFoxWeb-PT
+# OutFoxWeb-PT (ARCHIVED/ARQUIVADO)
+
+## PT
+
+Esse Projeto foi arquivado e não vai ser mais atualizado, o site foi atualizado e suporta tradução de forma que não necessita mais de tal ferramenta como essa. Se você quer ajudar na tradução PT-BR do jogo ou do site, entre no [nosso discord](https://discord.gg/cN4TjgQdcA.
+
+## EN
+
+The Project OutFox backend has been updated and no longer requires such hacky tools for translation development, if you wish to translate https://projectoutfox.com/, please contact us under our [Discord Server](https://discord.gg/cN4TjgQdcA)
+
+** **
 
 Portuguese translation of OutFox website.
 
